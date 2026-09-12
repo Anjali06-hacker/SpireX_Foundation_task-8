@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Makes the webpage responsive on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Browser tab title -->
+    <title>Drag and Drop List</title>
+    <!-- Connecting CSS file -->
+    <link rel="stylesheet" href="task-8.css">
+</head>
+<body>
+    <!-- Main application container -->
+    <main class="container">
+        <!-- Page heading -->
+        <h1>Drag-and-Drop List</h1>
+        <!-- Short description -->
+        <p class="description">
+            Drag the items to rearrange their order
+        </p>
+        <!--This is the list container.
+            Each list item has draggable="true"
+            so JavaScript can detect drag events.        -->
+        <ul id="dragList" class="drag-list">
+            <li class="list-item" draggable="true">
+                <span class="number">1</span>
+                <span class="item-text">Learn HTML</span>
+                <span class="drag-icon">☰</span>
+            </li>
+            <li class="list-item" draggable="true">
+                <span class="number">2</span>
+                <span class="item-text">Learn CSS</span>
+                <span class="drag-icon">☰</span>
+            </li>
+            <li class="list-item" draggable="true">
+                <span class="number">3</span>
+                <span class="item-text">Learn JavaScript</span>
+                <span class="drag-icon">☰</span>
+            </li>
+            <li class="list-item" draggable="true">
+                <span class="number">4</span>
+                <span class="item-text">Build Projects</span>
+                <span class="drag-icon">☰</span>
+            </li>
+            <li class="list-item" draggable="true">
+                <span class="number">5</span>
+                <span class="item-text">Upload to GitHub</span>
+                <span class="drag-icon">☰</span>
+            </li>
+        </ul>
+        <!-- Message displayed after rearranging -->
+        <p id="statusMessage" class="status-message">
+            Drag an item to change its position.
+        </p>
+    </main>
+    <!-- Connecting JavaScript file -->
+    <script src="task-8.js"></script>
+</body>
+</html>
